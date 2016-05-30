@@ -20,6 +20,7 @@ import org.openpnp.machine.reference.ReferenceDriver;
 import org.openpnp.machine.reference.ReferenceMachine;
 import org.openpnp.machine.reference.driver.GcodeDriver;
 import org.openpnp.machine.reference.driver.GrblDriver;
+import org.openpnp.machine.reference.driver.KolardDriver;
 import org.openpnp.machine.reference.driver.LinuxCNC;
 import org.openpnp.machine.reference.driver.MarlinDriver;
 import org.openpnp.machine.reference.driver.NullDriver;
@@ -65,6 +66,7 @@ public class ReferenceMachineConfigurationWizard extends AbstractConfigurationWi
         comboBoxDriver.addItem(GrblDriver.class.getCanonicalName());
         comboBoxDriver.addItem(LinuxCNC.class.getCanonicalName());
         comboBoxDriver.addItem(MarlinDriver.class.getCanonicalName());
+        comboBoxDriver.addItem(KolardDriver.class.getCanonicalName());
         comboBoxDriver.addItem(SimulatorDriver.class.getCanonicalName());
         comboBoxDriver.addItem(SprinterDriver.class.getCanonicalName());
         comboBoxDriver.addItem(TinygDriver.class.getCanonicalName());
